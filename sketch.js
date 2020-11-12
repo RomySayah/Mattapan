@@ -76,7 +76,7 @@ function setup() {
     
   nextBtn.mousePressed(function(){
       index+=1;
-      if(index>58 -1){
+      if(index>25 -1){
           index  = 0;
       }
     nextImg = loadImage('images/random2/img_'+index+'.png', drawImage);
@@ -86,7 +86,7 @@ function setup() {
   });
   prevBtn.mousePressed(function(){
       index-=1;
-      if(index>58 -1){
+      if(index>25 -1){
           index  = 0;
       }
     prevImg = loadImage('images/random2/img_'+index+'.png', drawImage);

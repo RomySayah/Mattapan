@@ -14,7 +14,7 @@ let inputImg, currentImg, inputCanvas, output, statusMsg, pix2pix, transferBtn, 
             transferBtn = select('#transferBtn');
             pixelDensity(1);
 
-            pix2pix = ml5.pix2pix('models/model-8800.meta', modelLoaded);
+            pix2pix = ml5.pix2pix('model/model2.pict', modelLoaded);
 
         }
 
