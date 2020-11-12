@@ -24,22 +24,16 @@ function setup() {
   // Get the buttons
   currentColor = color(255, 126, 0);
   currentStroke = 0;
-  select('#color_brick').mousePressed(() => currentColor = color(175, 5, 5));
-  select('#color_alucobond').mousePressed(() => currentColor = color(210,163,231));
-  select('#color_panel').mousePressed(() => currentColor = color(216,14,87));
-  select('#color_wood').mousePressed(() => currentColor = color(0,255,191));
-  select('#color_windSky').mousePressed(() => currentColor = color(255,173,0));
-  select('#color_windRefl').mousePressed(() => currentColor = color(120,255,0));
-  select('#color_windCurt').mousePressed(() => currentColor = color(71,34,85));
-  select('#color_windStru').mousePressed(() => currentColor = color(113,33,146));
-  select('#color_windDeep').mousePressed(() => currentColor = color(122,146,148));
-  select('#color_mullion1').mousePressed(() => currentColor = color(124,199,205));
-  select('#color_mullion2').mousePressed(() => currentColor = color(0,0,0));
-  select('#color_exhaust').mousePressed(() => currentColor = color(255,0,233));
-  select('#color_sunshade').mousePressed(() => currentColor = color(48,79,81));
-  select('#color_billboard').mousePressed(() => currentColor = color(145,163,4));
-  select('#color_shadow').mousePressed(() => currentColor = color(33,154,0));
-  select('#color_foliage').mousePressed(() => currentColor = color(252,241,142));
+  select('#color_facade').mousePressed(() => currentColor = color(255, 126, 0));
+  select('#color_window').mousePressed(() => currentColor = color(185,255,0));
+  select('#color_balcony').mousePressed(() => currentColor = color(169,71,130));
+  select('#color_roof').mousePressed(() => currentColor = color(1,66,255));
+  select('#color_backfacade').mousePressed(() => currentColor = color(210,0,255));
+  select('#color_stair').mousePressed(() => currentColor = color(0,255,199));
+  select('#color_door').mousePressed(() => currentColor = color(255,0,252));
+  select('#color_column').mousePressed(() => currentColor = color(153,179,254));
+  select('#color_foliage').mousePressed(() => currentColor = color(132,1,255));
+  
   
 
   // Select 'transfer' button html element
@@ -85,7 +79,7 @@ function setup() {
       if(index>58 -1){
           index  = 0;
       }
-    nextImg = loadImage('images/random3/'+index+'.jpg', drawImage);
+    nextImg = loadImage('images/random2/img_'+index+'.png', drawImage);
     currentImg = nextImg
     shapes_coord = []
     shapes_colors = [] 
@@ -95,7 +89,7 @@ function setup() {
       if(index>58 -1){
           index  = 0;
       }
-    prevImg = loadImage('images/random3/'+index+'.jpg', drawImage);
+    prevImg = loadImage('images/random2/img_'+index+'.png', drawImage);
     currentImg = prevImg
     shapes_coord = []
     shapes_colors = [] 
@@ -104,7 +98,7 @@ function setup() {
 
 
   startBtn.mousePressed(function() {
-    pix2pix = ml5.pix2pix('model/model3.pict', modelLoaded);
+    pix2pix = ml5.pix2pix('model/model2.pict', modelLoaded);
     $("#screen").fadeOut( "slow", function() {
       // Animation complete.
     });
