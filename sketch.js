@@ -66,7 +66,7 @@ function setup() {
 
   randomBtn.mousePressed(function() {
     var nb = (int)(Math.random() * Math.floor(59))
-    randImg = loadImage('images/random3/'+nb+'.jpg', drawImage);
+    randImg = loadImage('images/Hyunsuk_data/Mattapan_'+nb+'.jpg', drawImage);
     currentImg = randImg
     shapes_coord = []
     shapes_colors = []
