@@ -76,20 +76,20 @@ function setup() {
     
   nextBtn.mousePressed(function(){
       index+=1;
-      if(index>25 -1){
+      if(index>10 -1){
           index  = 0;
       }
-    nextImg = loadImage('images/random2/img_'+index+'.png', drawImage);
+    nextImg = loadImage('images/Hyunsuk_data/Mattapan_'+index+'.jpg', drawImage);
     currentImg = nextImg
     shapes_coord = []
     shapes_colors = [] 
   });
   prevBtn.mousePressed(function(){
       index-=1;
-      if(index>25 -1){
+      if(index>10 -1){
           index  = 0;
       }
-    prevImg = loadImage('images/random2/img_'+index+'.png', drawImage);
+    prevImg = loadImage('images/Hyunsuk_data/Mattapan_'+index+'.jpg', drawImage);
     currentImg = prevImg
     shapes_coord = []
     shapes_colors = [] 
