@@ -76,7 +76,7 @@ function setup() {
     
   nextBtn.mousePressed(function(){
       index+=1;
-      if(index>11 -1){
+      if(index>22 -1){
           index  = 0;
       }
     nextImg = loadImage('images/Odd_data/'+index+'.jpg', drawImage);
@@ -86,7 +86,7 @@ function setup() {
   });
   prevBtn.mousePressed(function(){
       index-=1;
-      if(index>11 -1){
+      if(index>22 -1){
           index  = 0;
       }
     prevImg = loadImage('images/Odd_data/'+index+'.jpg', drawImage);
