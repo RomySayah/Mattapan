@@ -66,7 +66,7 @@ function setup() {
 
   randomBtn.mousePressed(function() {
     var nb = (int)(Math.random() * Math.floor(59))
-    randImg = loadImage('images/Odd_data/'+nb+'.jpg', drawImage);
+    randImg = loadImage('images/MAXXI/'+nb+'.jpg', drawImage);
     currentImg = randImg
     shapes_coord = []
     shapes_colors = []
@@ -76,20 +76,20 @@ function setup() {
     
   nextBtn.mousePressed(function(){
       index+=1;
-      if(index>9 -1){
+      if(index>11 -1){
           index  = 0;
       }
-    nextImg = loadImage('images/Odd_data/'+index+'.jpg', drawImage);
+    nextImg = loadImage('images/MAXXI/'+index+'.jpg', drawImage);
     currentImg = nextImg
     shapes_coord = []
     shapes_colors = [] 
   });
   prevBtn.mousePressed(function(){
       index-=1;
-      if(index>9 -1){
+      if(index>11 -1){
           index  = 0;
       }
-    prevImg = loadImage('images/Odd_data/'+index+'.jpg', drawImage);
+    prevImg = loadImage('images/MAXXI/'+index+'.jpg', drawImage);
     currentImg = prevImg
     shapes_coord = []
     shapes_colors = [] 
